@@ -1,0 +1,177 @@
+/* normalize the page */
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* My Styles */
+body {
+    font-family: Helvetica, Verdana, Arial, Sans-Serif;
+    background-color: #0F1031;
+    color: #fff;
+    margin: 0 auto;
+}
+header {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+main {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+.jeopardyBoard {
+    display: inline-block;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+#jeopardyBoard table {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* Jeopardy tiles */
+.jBtn {
+    border:1px solid #ccc;
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffffff;
+    color: #353535;
+}
+.jBtn:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+/* tile colors */
+.bgRed {
+    background-color: rgba(255,0,0,0.5);
+}
+.bgGreen {
+    background-color: rgba(0,255,0,0.5);
+}
+
+/* Scoreboard */
+.scoreboard {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.myScore {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+#myScore {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.tempNumDisplay {
+    position: absolute;
+    top: 50%;
+    font-size: 0.8rem;
+}
+
+.input {
+    display: block;
+    text-align: center;
+}
+.myAnswer {
+    padding-bottom: 20px;
+}
+.myQuestion, .myAnswer {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+}
+input {
+    text-align: center;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.2);
+}
+.inputBox {
+    width: 100%;
+    height: 100%;
+}
+#questionBox, #myAnswerBox, #myBet {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+#questionBox {
+    width:100%;
+    min-height: 2rem;
+}
+#myAnswerBox {
+    width:100%;
+    height: 50px;
+}
+#myBet {
+    width:200px;
+    height: 50px;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+#submit {
+    margin-bottom: 20px;
+}
+
+/* daily-double */
+#dailyDouble {
+    position: absolute;
+    display: block;
+    text-align: center;
+    z-index: 9;
+}
+.modal {
+    display: inline-block;
+    background-color: #fff;
+    max-width: 500px;
+    padding: 10px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.8);
+    color: #F6574C;
+}
+
+/* buttons */
+.btn-main {
+    border-radius: 5px;
+    background-color: #F6574C;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+}
+.btn-main a {
+    color: #ffffff;
+}
+.btn-main a:hover {
+    color: #F6574C;
+}
+.btn-main a:active {
+    color: #EDE580;
+}
+.btn-main:hover {
+    background-color: #EDE580;
+    cursor: pointer;
+}

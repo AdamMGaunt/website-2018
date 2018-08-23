@@ -1,0 +1,242 @@
+/* normalize the page */
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* Layout */
+body {
+   font-family: Helvetica, Verdana, Arial, Sans-Serif;
+   background-color: #0F1031;
+   color: #fff;
+   margin: 0 auto;
+}
+header, footer, #wrapper {
+   margin: 0 auto;
+}
+footer {
+   text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h1 {
+   font-size: 3rem;
+   text-align: center;
+}
+h2 {
+   font-size: 1.5rem;
+}
+h3 {
+   font-size: 1rem;
+}
+p {
+   font-size: 0.8rem;
+   padding: 1rem;
+}
+p.subheading {
+   color: #666;
+   font-family: Verdana, Helvetica, Arial, Sans-Serif;
+   font-size: 0.8rem;
+   margin-top: 5px;
+}
+
+/* Buttons */
+.myButtons {
+    padding-top: 1rem;
+    text-align: center;
+}
+.btn {
+    background-color: #A96138;
+    color: #fff;
+    border: 1px solid #A96138;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #D39069;
+}
+.btn:active {
+    background-color: #FEC8A9;
+}
+.btn:focus {
+    outline: 0;
+}
+.active {
+    background-color: #D39069;
+}
+
+/* questions */
+#questionBox {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.questions {
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+#wrapper, header, footer {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+.puzzle-select {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/* letter blocks */
+.wordsearch {
+    display: block;
+    text-align: center;
+}
+#wordsearch {
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    width:400px;
+    height: auto;
+    margin: 0 auto;
+    color: #000;
+}
+
+.letter {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0;
+    background-color: #fff;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.letter:hover {
+    cursor: pointer;
+    -webkit-animation: buttonHover 4s linear infinite; /* Safari 4.0 - 8.0 */
+    animation: buttonHover 4s linear infinite;
+}
+.letter:active {
+    -webkit-animation-name: buttonClick;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    animation-name: buttonClick;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.letterOpening {
+    -webkit-animation: buttonHover 4s linear infinite; /* Safari 4.0 - 8.0 */
+    animation: buttonHover 4s linear infinite;
+}
+
+/* <============ Questions ===========> */
+.questions {
+    display: inline-block;
+    text-align: left;
+}
+.on {
+    /*background-color: var(--comp-base); // does not work in IE*/
+    /*border-color: var(--comp-medium-light); // does not work in IE*/
+    color: #fff;
+    background-color: #A96138;
+    border-color: #D39069;
+}
+@keyframes buttonClick {
+    0% {top: 0px; width: 50px; height: 50px;}
+    50% {top: 3px; width: 47px; height: 47px;}
+    100% {top: 0px; width: 50px; height: 50px;}
+}
+@-webkit-keyframes buttonClick {
+    0% {top: 0px;width: 50px; height: 50px;}
+    50% {top: 3px; width: 47px; height: 47px;}
+    100% {top: 0px; width: 50px; height: 50px;}
+}
+@keyframes buttonHover {
+    0% {left: 0px;}
+    50% {border: 1px solid #A96138; background-color: #A96138 }
+    100% {left: 0px;}
+}
+@-webkit-keyframes buttonHover {
+    0% {left: 0px;}
+    25% {left: -1px;}
+    50% {left: 1px;}
+    75% {left: -1px;}
+    100% {left: 0px;}
+}
+
+/* Popup */
+.center {
+    text-align: center;
+}
+
+.myBlock {
+    height:1000px;
+}
+.relative {
+    position: relative;
+}
+
+#popup {
+    max-width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: 999;
+}
+
+.popup-wrapper {
+    background-color: #0f1031;
+    border: 1px solid #121225;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #5e5f98;
+    overflow: hidden;
+}
+
+.popup-title {
+    min-height: 3rem;
+    padding: 10px 15px;
+    background-color: #050620;
+    border-bottom: 1px solid #121225;
+}
+
+.popup-title h3 {
+    margin: 0;
+    line-height: 1.5em;
+    color: #333;
+}
+
+.popup-body {
+    padding: 10px 15px;
+}
+
+.popup-close {
+    float: right;
+    margin-top: 2px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: #333;
+}

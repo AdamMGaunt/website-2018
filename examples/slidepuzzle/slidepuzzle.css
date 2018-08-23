@@ -1,0 +1,235 @@
+/* normalize the page */
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* Layout */
+body {
+   font-family: Helvetica, Verdana, Arial, Sans-Serif;
+   background-color: #0F1031;
+   color: #fff;
+   margin: 0 auto;
+}
+header, footer, #wrapper {
+   margin: 0 auto;
+}
+footer {
+   text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h1 {
+   font-size: 3rem;
+   text-align: center;
+}
+h2 {
+   font-size: 1.5rem;
+}
+h3 {
+   font-size: 1rem;
+}
+p {
+   font-size: 0.8rem;
+   padding: 1rem;
+}
+p.subheading {
+   color: #666;
+   font-family: Verdana, Helvetica, Arial, Sans-Serif;
+   font-size: 0.8rem;
+   margin-top: 5px;
+}
+
+/* Buttons */
+.myButtons {
+    padding-top: 1rem;
+    text-align: center;
+}
+.btn {
+    background-color: #A96138;
+    color: #fff;
+    border: 1px solid #A96138;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #D39069;
+}
+.btn:active {
+    background-color: #FEC8A9;
+}
+.btn:focus {
+    outline: 0;
+}
+.active {
+    background-color: #D39069;
+}
+
+/* questions */
+#questionBox {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.questions {
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+#wrapper, header, footer {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+.puzzle-select {
+    text-align: center;
+    padding: 1rem;
+}
+
+#slidePuzzle {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.row {
+    width: 100%;
+    height: 200px;
+}
+
+.box {
+    display: inline-block;
+    width: calc(33% - 1px);
+    height: 100%;
+    background-color: #ccc;
+    border: 1px solid gainsboro;
+    padding-top: calc(100px - 8px);
+    margin-bottom: 4px;
+}
+
+.feedback {
+    text-align: center;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
+
+/* ======= Images ======= */
+.img0 {
+    background-image: url(../../images/slidepuzzle/img0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img1 {
+    background-image: url(../../images/slidepuzzle/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img2 {
+    background-image: url(../../images/slidepuzzle/img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img3 {
+    background-image: url(../../images/slidepuzzle/img3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img4 {
+    background-image: url(../../images/slidepuzzle/img4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img5 {
+    background-image: url(../../images/slidepuzzle/img5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img6 {
+    background-image: url(../../images/slidepuzzle/img6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img7 {
+    background-image: url(../../images/slidepuzzle/img7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.img8 {
+    background-image: url(../../images/slidepuzzle/img8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* ======= Animations ======= */
+/* Move Up */
+.moveUp {
+    animation: moveUp 0.15s ease 1;
+}
+@keyframes moveUp {
+    0% {top: 100px;}
+    100% {top:0;}
+}
+@-webkit-keyframes moveUp {
+    0% {top: 100px;}
+    100% {top:0;}
+}
+/* Move Down */
+.moveDown {
+    animation: moveDown 0.15s ease 1;
+}
+@keyframes moveDown {
+    0% {top: -100px;}
+    100% {top: 0;}
+}
+@-webkit-keyframes moveDown {
+    0% {top: -100px;}
+    100% {top: 0;}
+}
+/* Move Left */
+.moveLeft {
+    animation: moveLeft 0.15s ease 1;
+}
+@keyframes moveLeft {
+    0% {left: 100px;}
+    100% {left: 0;}
+}
+@-webkit-keyframes moveLeft {
+    0% {left: 100px;}
+    100% {left: 0;}
+}
+/* Move Right */
+.moveRight {
+    animation: moveRight 0.15s ease 1;
+}
+@keyframes moveRight {
+    0% {left: -100px;}
+    100% {left: 0;}
+}
+@-webkit-keyframes moveRight {
+    0% {left: -100px;}
+    100% {left: 0;}
+}

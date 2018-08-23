@@ -1,0 +1,31 @@
+/*<==== COLORS ====>*/
+:root {
+    /*<==== Base ====>*/
+    --base: #256F5B /*rgb(37,111,91)*/;
+    --base-medium-light: #458A77 rgb(69,138,119);
+    --base-light: #6FA697 /*rgb(111,166,151)*/;
+    --base-medium-dark: #0E5340 rgb(14,83,64);
+    --base-dark: #003728 rgb(0,55,40);
+    /*<==== Complimentary ====>*/
+    --comp-base: #A96138 /*rgb(169,97,56)*/;
+    --comp-medium-light: #D39069 rgb(211,144,105);
+    --comp-light: #FEC8A9 rgb(254,200,169);
+    --comp-medium-dark: #7F3B15 rgb(127,59,21);
+    --comp-dark: #551F00 rgb(85,31,0);
+}
+/*<===== More colors =====>*/
+.maastricht-blue {
+    background-color: #0b132b;
+}
+.yankees-blue {
+    background-color: #1c2541;
+}
+.independence {
+    background-color: #3a506b;
+}
+.sea-serpent {
+    background-color: #5bc0be;
+}
+.white {
+    background-color: #ffffff;
+}

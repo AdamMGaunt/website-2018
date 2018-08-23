@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slide Puzzle</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- css -->
+        <!--<link href="responsive-grid-ag.css" rel="stylesheet" type="text/css" />-->
+        <link href="slidepuzzle.css" rel="stylesheet" type="text/css" />
+        <!-- javascript -->
+        <script src="slidepuzzle.js" defer></script>
+    </head>
+    <body onload="initPuzzle()">
+        <header>
+            <!-- Insert a Header here-->
+            <h1>Slide Puzzle</h1>
+        </header>
+        <div id="wrapper" class="relative">
+            <!-- Content goes here -->
+            <div class="content">
+                <div class="puzzle-select">
+                    <button type="button" class="btn" onclick="">Puzzle 1</button>
+                    <button type="button" class="btn" onclick="">Puzzle 2</button>
+                    <button type="button" class="btn" onclick="">Puzzle 3</button>
+                </div>
+            </div>
+            <div class="feedback">
+                <h2 id="myAnswer"></h2>
+            </div>
+            <div class="wordsearch">
+                <div id="slidePuzzle" >
+                </div>
+            </div>
+            <div class="myButtons">
+                <button class="btn" type="button" onclick="compareArray()">Submit</button>
+                <button class="btn" type="button" onclick="resetPuzzle()">Reset</button>
+            </div>
+         </div>
+        <footer>
+        </footer>
+    </body>
+</html>

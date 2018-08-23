@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Basic mobile first website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "Adam",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "npm": "^6.1.0"
+  },
+  "directories": {
+    "example": "examples"
+  }
+}

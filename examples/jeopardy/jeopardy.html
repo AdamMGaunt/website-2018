@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="jeopardy.css">
+</head>
+<body onload="jeopardyInit()">
+    <header>
+        <h1>Jeopardy Game</h1>
+    </header>
+    <main>
+        <div id="jeopardyBoard" class="jeopardyBoard">
+            <div id="directions" class="directions">
+                <h2>Directions:</h2>
+                <p>Jeopardy is the game where the answer is provided and you need to ask the right question.  You are giving 1000 points to start the game and will begin by clicking on a tile under your choosen heading.  An answer will appear then fill in your question in the box below, once satisfied with your answer click submit to check.  Remember to keep an eye out for the daily double for your chance to win big.</p>
+                <p>Good luck and have fun!</p>
+            </div>
+            <div id="scoreBoard" class="scoreBoard">
+                <p><strong>Score</strong></p>
+                <span id="tempNumDisplay" class="tempNumDisplay"></span>
+                <div id="scoreBox" class="myScore"><span id="myScore" class="count" onchange="countNum()"></span></div>
+                <div id="dailyDouble">
+                    <div class="input modal">
+                        <h2>Daily Double</h2>
+                        <div id="myBet">
+                            <input id="myBetBox" type="text" name="myAnswer" class="inputBox" value="" placeholder="Place your bet here">
+                        </div>
+                        <button class="btn" onclick="placeBet()">Bet</button>
+                    </div>
+                </div>
+            </div>
+            <table id="jeopardyTable">
+                <tbody id="jeopardyTiles">
+                </tbody>
+            </table>
+            <div class="input">
+                <div class="myQuestion">
+                    <p>Question</p>
+                    <div id="questionBox"></div>
+                </div>
+                <div class="input">
+                </div>
+                <div class="myAnswer">
+                    <p>Answer</p>
+                    <input id="myAnswerBox" type="text" name="myAnswer" class="inputBox" placeholder="Type your answer here">
+                </div>
+            </div>
+            <button class="btn-main" id="submit" onclick="submitAnswer()">submit</button>
+            <div id="feedback" class="feedback">Enter your answer above</div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="jeopardy.js"></script>
+    <!-- JSON data requires a server or backend processor to work -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>-->
+</body>
+</html>

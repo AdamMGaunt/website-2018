@@ -1,0 +1,461 @@
+/* normalize the page */
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+ body {
+    font-family: Helvetica, Verdana, Arial, Sans-Serif;
+    /*background-color: #0F1031;*/
+    background: linear-gradient(0deg, #0F1031, #1d1f5e);
+    color: #fff;
+ }
+ header, footer, #wrapper {
+    margin: 0 auto;
+ }
+footer {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 700;
+   margin-bottom: 0;
+}
+h1 {
+    font-size: 3rem;
+    padding-left: 20px;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1rem;
+}
+p {
+    font-size: 0.8rem;
+}
+p.subheading {
+    color: #666;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.content {
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.content > p {
+    margin-top: 0;
+    max-width: 1000px;
+}
+.feedback {
+    padding: 20px 200px;
+    height: 1rem;
+    text-align: center;
+}
+.myButtons {
+    padding: 20px 200px;
+    text-align: center;
+}
+
+/* <============ BUTTONS ============> */
+.button {
+    background-color:var(--comp-base);
+    color: var(--base-medium-light);
+    border: 1px solid var(--comp-base);
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.button:hover {
+    cursor: pointer;
+}
+.button:focus {
+    outline: 0;
+}
+.circle-md, .circle-lg, .circle-sm {
+    background-color: #eee;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circle-lg {
+    width: 250px;
+    height: 250px;
+}
+.circle-md {
+    width: 150px;
+    height: 150px;
+}
+.circle-sm {
+    width: 75px;
+    height: 75px;
+}
+/* testing grids */
+.grid-item-content {
+    padding: 10px 20px;
+    /*border:1px solid #eee;*/
+}
+.grid-item-content > p {
+    text-align: left;
+}
+.grid-item-12 > .grid-item-content > p {
+    text-align: center;
+}
+
+/* droppables */
+.multiDroppable {
+    border:1px solid #ccc;
+}
+
+/* setting up grid system for columns */
+.l-wrap {
+   max-width: 1140px;
+   margin-right: auto;
+   margin-left: auto;
+   display: block;
+   margin: 0 auto;
+   max-width: 100%
+   height: auto;
+}
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: : 10px;
+    /* center everthing */
+    text-align: center;
+    height: 100%
+}
+.grid-item {
+    /*border:1px solid #eee;*/
+    min-height: inherit;
+}
+.grid-item-12 {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+.grid-item-9 {
+    width: 75%;
+    float: left;
+    padding-bottom: 10px;
+}
+.grid-item-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 10px;
+    min-height: inherit;
+}
+.grid-item-5 {
+    width: 20%;
+    float: left;
+    padding-bottom: 10px;
+}
+.grid-item-4 {
+    width: 33.3333%;
+    float: left;
+    padding-bottom: 10px;
+}
+.grid-item-3 {
+    width: 25%;
+    float: left;
+    padding-bottom: 10px;
+    min-height: inherit;
+}
+.grid-item-2 {
+    width: 16.6667%;
+    float: left;
+    padding-bottom: 10px;
+}
+.grid-item-1 {
+    width: 8.3333%;
+    float: left;
+    padding-bottom: 10px;
+}
+.one-col-grid:after, .two-col-grid:after,.three-col-grid:after, .four-col-grid:after, .five-col-grid:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.row:nth-of-type(1):after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+/* questions */
+.question {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.answer {
+    text-align: left;
+    padding-left: 50px;
+}
+.response {
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+    h1 {
+        font-size: 2rem;
+    }
+    .grid-item-12 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-9 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-6 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-4 {
+        width: 33.3333%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-3 {
+        width: 50%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-2 {
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-1 {
+        width: 16.6667%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .feedback {
+        padding: 20px 20px;
+        height: 1rem;
+        text-align: center;
+    }
+    .myButtons {
+        padding: 20px 20px;
+        text-align: center;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+    .grid-item-12 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-9 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-4 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .grid-item-3 {
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-2 {
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-1 {
+        width: 16.6667%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .feedback {
+        padding: 20px 100px;
+        height: 1rem;
+        text-align: center;
+    }
+    .myButtons {
+        padding: 20px 100px;
+        text-align: center;
+    }
+    .box-light {
+        margin: 0 50px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+.grid-item-12 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-9 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-4 {
+        width: 33.333%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-3 {
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-2 {
+        width: 16.6667%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-1 {
+        width: 8.3333%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .feedback {
+        padding: 20px 100px;
+        height: 1rem;
+        text-align: center;
+    }
+    .myButtons {
+        padding: 20px 100px;
+        text-align: center;
+    }
+    .box-light {
+        margin: 0 25px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+    .grid-item-12 {
+        width: 100%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-9 {
+        width: 75%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-4 {
+        width: 33.3333%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-3 {
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+        min-height: inherit;
+    }
+    .grid-item-2 {
+        width: 16.6667%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .grid-item-1 {
+        width: 8.3333%;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .feedback {
+        padding: 20px 150px;
+        height: 1rem;
+        text-align: center;
+    }
+    .myButtons {
+        padding: 20px 150px;
+        text-align: center;
+    }
+    .box-light {
+        margin: 0;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

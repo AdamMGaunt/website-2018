@@ -1,0 +1,578 @@
+/*========== Normalize ==========*/
+/* Reset the page */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+/* normalize the page */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* Fonts */
+/* Colors */
+/* Navigation */
+nav {
+  display: block;
+  margin: 0 auto;
+  color: #353535;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+nav .navbar {
+  text-align: center; }
+
+nav .nav-brand {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 15px;
+  text-align: left; }
+
+nav .nav-brand a {
+  color: #353535; }
+
+nav .nav-collapse:hover {
+  cursor: pointer; }
+
+nav .navbar .nav-top {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #353535;
+  /*background-color: rgba(60,120,126,0.9);*/
+  padding-top: 20px;
+  text-transform: uppercase;
+  padding: 20px; }
+
+nav .navbar ul li {
+  list-style-type: none;
+  display: block;
+  padding-top: 20px;
+  border-bottom: 1px solid #3C787E; }
+
+nav .navbar ul li:last-child {
+  border-bottom: none; }
+
+nav .nav-collapse {
+  float: right;
+  padding: 0 10px;
+  text-align: center;
+  outline: none; }
+
+nav .nav-collapse .menu-icon {
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px; }
+
+nav .nav-collapse .menu-icon i {
+  outline: none; }
+
+/* Nav bar large */
+.navbar-lg {
+  display: none;
+  text-align: center; }
+
+.navbar-lg .nav-top-lg {
+  display: inline-block;
+  width: 100%; }
+
+.navbar-lg .nav-top-lg li {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 10px; }
+
+.navbar-lg .nav-top-lg li a {
+  color: #353535; }
+
+/* Round Cornors */
+/* Linear Gradients*/
+/* Breakpoints */
+body {
+  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  color: #333; }
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  text-align: center; }
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin: 0 0 23px 0; }
+
+h2, h3, h4, h5 {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 23px 0; }
+
+h3 {
+  border-bottom: 1px solid gainsboro;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+p {
+  font-family: "Droid Serif", serif;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 23px 0; }
+
+header {
+  text-align: center; }
+  header h1 {
+    margin-bottom: 0; }
+  header h4 {
+    margin-top: 0; }
+
+main {
+  width: 100%;
+  /*
+    background-image: url('../images/fishing.jpg');
+    background-image: url('../images/G4-mountian.png');
+    */ }
+
+footer {
+  padding: 20px;
+  background-color: #3C787E;
+  color: #fff;
+  width: 100%; }
+
+footer p {
+  text-align: center; }
+
+main p {
+  padding: 10px; }
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #3C787E;
+  outline: none; }
+
+a:hover {
+  color: #F6574C; }
+
+a:active {
+  color: #EDE580; }
+
+/* buttons */
+.btn-main {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #F6574C;
+  padding: 10px 15px;
+  border: 2px solid #fff; }
+
+.btn-main a {
+  color: #FFFFFF; }
+
+.btn-main a:hover {
+  color: #F6574C; }
+
+.btn-main a:active {
+  color: #EDE580; }
+
+.btn-main:hover {
+  background-color: #FFFFFF; }
+
+/* Feature Image/box */
+.feature {
+  /*Photo by Aperture Vintage on Unsplash 2018*/
+  /*
+    background-image: url('../images/G4-mountian.png');
+    background-image: url('https://via.placeholder.com/1920x1080');
+    */
+  background-image: url("../images/aperture-vintage-lg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 809px; }
+
+.feature div {
+  position: relative;
+  height: 100%;
+  padding-top: calc(50% - 1rem);
+  background: rgba(0, 0, 0, 0.5);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  /*
+    background: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.8)
+    );
+    */
+  color: #F6574C; }
+
+.feature > div > i {
+  font-size: 4rem;
+  padding-bottom: 2rem; }
+
+.feature > div > span {
+  font-size: 2rem;
+  font-weight: normal;
+  position: absolute;
+  z-index: 1; }
+
+.feature > div > span a i {
+  color: #F6574C; }
+
+.content {
+  padding: 3rem 1rem;
+  background-color: #fff; }
+
+.content i {
+  font-size: 2rem; }
+
+.content .icons i {
+  font-size: 2rem; }
+
+/* Bio */
+#bio {
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto; }
+
+#bio h3 {
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto; }
+
+/* Gallery */
+.gallery {
+  display: block;
+  text-align: center;
+  padding: 2rem 1rem; }
+
+#gallery1 {
+  background-color: #eeeeee; }
+
+#gallery2 {
+  background-color: #eeeeee; }
+
+.gallery .gallery-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid gainsboro;
+  background-color: #fff;
+  margin-bottom: 5px; }
+
+.gallery .gallery-item .gallery-content p {
+  text-align: center;
+  margin-bottom: 0; }
+
+.gallery .gallery-item .gallery-icons {
+  text-align: center;
+  padding-bottom: 1rem; }
+
+.gallery .gallery-item .gallery-icons i {
+  font-size: 1.25rem;
+  padding: 5px; }
+
+.gallery .gallery-item div i {
+  text-decoration: none;
+  color: #3C787E;
+  text-align: right; }
+
+.gallery .gallery-item div i:hover {
+  color: #F6574C;
+  cursor: pointer; }
+
+.gallery .gallery-item div i:active {
+  color: #EDE580; }
+
+.gallery-title h2 {
+  /*border-bottom: 1px solid gainsboro;*/ }
+
+/* buttons */
+.btn-gallery {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #F6574C;
+  padding: 10px 15px;
+  border: 2px solid #F6574C; }
+
+.btn-gallery {
+  color: #FFFFFF; }
+
+.btn-gallery:hover {
+  color: #3C787E;
+  cursor: pointer; }
+
+.btn-gallery:active {
+  color: #EDE580; }
+
+.btn-gallery:hover {
+  background-color: #FFFFFF; }
+
+/* color examples */
+.color-box {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+.color-box div {
+  display: inline-block;
+  width: 100px;
+  height: 100px; }
+
+.color-box div:nth-child(1) {
+  background-color: #EDE580; }
+
+.color-box div:nth-child(2) {
+  background-color: #A4AF69; }
+
+.color-box div:nth-child(3) {
+  background-color: #3C787E; }
+
+.color-box div:nth-child(4) {
+  background-color: #52414C; }
+
+.color-box div:nth-child(5) {
+  background-color: #F6574C; }
+
+/* CTA */
+.cta {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F6574C;
+  /*
+    background: linear-gradient(
+        $ming,
+        $red-orange
+    );
+    */
+  padding: 2rem; }
+
+.cta .cta-content {
+  display: inline-block;
+  color: #fff; }
+
+.cta .cta-content h2 {
+  margin-bottom: 0; }
+
+.cta button {
+  background-color: #F6574C;
+  padding: 10px 15px;
+  border: 2px solid #fff; }
+
+/* Design */
+#section3 {
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto; }
+
+/* Contact */
+#bottom {
+  background-image: url("../images/aperture-vintage-lg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#bottom > div {
+  background: rgba(0, 0, 0, 0.5);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  height: 100%; }
+
+.contact {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #FFFFFF; }
+
+.contact i {
+  font-size: 2rem; }
+
+.contact .form-item {
+  padding-top: 20px; }
+
+.contact .form-item input {
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem; }
+
+.contact .form-item textarea {
+  border-radius: 5px;
+  width: 100%;
+  height: 5rem; }
+
+.contact a i {
+  font-size: 2rem;
+  color: #FFFFFF; }
+
+/* Icon links */
+.contact a i:hover {
+  color: #F6574C; }
+
+.contact a i:active {
+  color: #EDE580; }
+
+/* Footer */
+footer .nav-bottom {
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  padding: 2rem;
+  text-align: center; }
+
+footer .nav-bottom ul li {
+  display: inline-block;
+  padding: 0 10px; }
+
+footer .nav-bottom ul li a {
+  color: #FFFFFF; }
+
+footer .nav-bottom ul li a:hover {
+  color: #F6574C; }
+
+footer .nav-bottom ul li a:active {
+  color: #EDE580; }
+
+/* controllers */
+.hide {
+  display: none; }
+
+.img-responsive {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+.text-center {
+  text-align: center; }
+
+.anchor {
+  height: 3rem; }
+
+/* CSS Animations */
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .gallery {
+    display: block; }
+  .gallery .gallery-item {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .nav-top {
+    width: 100%; }
+  .content p {
+    padding: 1rem; }
+  .icons {
+    padding-top: 2rem; }
+  .icons i {
+    padding: 0 1rem; }
+  footer .nav-bottom ul li {
+    text-align: center;
+    border-right: none; }
+  footer .nav-bottom ul li a {
+    padding: 0;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 300; } }
+
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .nav-top {
+    width: 100%; }
+  .gallery {
+    display: block; }
+  .gallery .gallery-item {
+    display: inline-block;
+    width: 49.5%;
+    height: auto; }
+  .contact {
+    width: 500px;
+    height: auto; }
+  .icons {
+    padding-top: 1rem; }
+  footer .nav-bottom ul li {
+    border-right: 1px solid #D9D9D9; }
+  footer > .nav-bottom > ul > li:nth-child(6) {
+    border-right: 0px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .gallery {
+    display: block; }
+  .gallery .gallery-item {
+    display: inline-block;
+    width: 24%;
+    height: auto; }
+  .contact {
+    width: 600px;
+    height: auto; }
+  .nav-collapse,
+  .navbar {
+    display: none; }
+  .navbar-lg, .nav-brand {
+    display: inline-block; }
+  footer .nav-bottom ul li {
+    border-right: 1px solid #D9D9D9; }
+  footer > .nav-bottom > ul > li:nth-child(6) {
+    border-right: 0px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .contact {
+    width: 800px;
+    height: auto; }
+  footer .nav-bottom ul li {
+    border-right: 1px solid #D9D9D9; }
+  footer > .nav-bottom > ul > li:nth-child(6) {
+    border-right: 0px; } }

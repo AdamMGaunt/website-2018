@@ -1,0 +1,59 @@
+.center {
+    text-align: center;
+}
+
+.myBlock {
+    height:1000px;
+}
+/* Popup */
+.relative {
+    position: relative;
+}
+
+#popup {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    z-index: 999;
+}
+
+.popup-wrapper {
+    background-color: #0f1031;
+    border: 1px solid #121225;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #5e5f98;
+    overflow: hidden;
+}
+
+.popup-title {
+    height: 3rem;
+    padding: 10px 15px;
+    background-color: #050620;
+    border-bottom: 1px solid #121225;
+}
+
+.popup-title h3 {
+    margin: 0;
+    line-height: 1.5em;
+    color: #333;
+}
+
+.popup-body {
+    padding: 10px 15px;
+}
+
+.popup-close {
+    float: right;
+    margin-top: 2px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: #333;
+}

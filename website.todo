@@ -1,0 +1,22 @@
+Adam Gaunt Website todo, change log and bug fix.
+
+Todo:
+  Head:
+    ☐ Add favicon for browser tabs 56x56 128x128
+    ☐ Spelling check
+    ☐ Change css CDN links to minified scripts
+    ☐ Optimize image loads
+
+  Gallery:
+    ☐ Add images for all gallery items
+    ☐ Create links to websites
+    ☐ Create brief to add to website work descriptions
+
+  Design:
+    ☐ Add design section content
+    ☐ Create gallery for illustrations
+
+  Javascript:
+    ☐ Mobile alignment issue (not centering on mobiles)
+    ☐ adjust screen change script (not working properly...)
+    ☐ Make menu options icons but change to text when hover. 
