@@ -19,4 +19,8 @@ Todo:
   Javascript:
     ☐ Mobile alignment issue (not centering on mobiles)
     ☐ adjust screen change script (not working properly...)
-    ☐ Make menu options icons but change to text when hover. 
+    ☐ Make menu options icons but change to text when hover.
+
+
+To run scss in node, got to cmd line and enter the following in the root
+  npm run scss

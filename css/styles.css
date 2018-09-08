@@ -22,12 +22,12 @@ html {
 nav {
   display: block;
   margin: 0 auto;
-  color: #353535;
+  color: #FFFFFF;
   position: fixed;
   z-index: 10;
   top: 0;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #3C6E71;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 nav .navbar {
@@ -42,7 +42,7 @@ nav .nav-brand {
   text-align: left; }
 
 nav .nav-brand a {
-  color: #353535; }
+  color: #FFFFFF; }
 
 nav .nav-collapse:hover {
   cursor: pointer; }
@@ -96,7 +96,7 @@ nav .nav-collapse .menu-icon i {
   padding: 20px 10px; }
 
 .navbar-lg .nav-top-lg li a {
-  color: #353535; }
+  color: #FFFFFF; }
 
 /* Round Cornors */
 /* Linear Gradients*/
@@ -107,7 +107,6 @@ body {
   color: #333; }
 
 h1, h2, h3, h4, h5 {
-  text-transform: uppercase;
   text-align: center; }
 
 h1 {
@@ -153,12 +152,15 @@ main {
 
 footer {
   padding: 20px;
-  background-color: #3C787E;
+  background-color: #3C6E71;
   color: #fff;
   width: 100%; }
 
 footer p {
   text-align: center; }
+
+footer .copyright {
+  font-size: 0.6rem; }
 
 main p {
   padding: 10px; }
@@ -236,7 +238,7 @@ a:active {
     rgba(0,0,0,0.8)
     );
     */
-  color: #F6574C; }
+  color: #FFFFFF; }
 
 .feature > div > i {
   font-size: 4rem;
@@ -279,10 +281,10 @@ a:active {
   padding: 2rem 1rem; }
 
 #gallery1 {
-  background-color: #eeeeee; }
+  background-color: #FFFFFF; }
 
 #gallery2 {
-  background-color: #eeeeee; }
+  background-color: #FFFFFF; }
 
 .gallery .gallery-item {
   display: block;
@@ -290,7 +292,11 @@ a:active {
   height: auto;
   border: 1px solid gainsboro;
   background-color: #fff;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2); }
+
+.gallery .gallery-item:hover {
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5); }
 
 .gallery .gallery-item .gallery-content p {
   text-align: center;
@@ -303,6 +309,11 @@ a:active {
 .gallery .gallery-item .gallery-icons i {
   font-size: 1.25rem;
   padding: 5px; }
+
+.gallery-img {
+  max-width: 350px;
+  height: 300px;
+  overflow: hidden; }
 
 .gallery .gallery-item div i {
   text-decoration: none;
@@ -372,7 +383,7 @@ a:active {
   display: block;
   margin: 0 auto;
   text-align: center;
-  background-color: #F6574C;
+  background-color: #3C6E71;
   /*
     background: linear-gradient(
         $ming,
@@ -389,7 +400,7 @@ a:active {
   margin-bottom: 0; }
 
 .cta button {
-  background-color: #F6574C;
+  background-color: #3C6E71;
   padding: 10px 15px;
   border: 2px solid #fff; }
 
