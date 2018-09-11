@@ -20,6 +20,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- load in image array -->
+    <script src="js/images.js" type="text/javascript"></script>
   </head>
   <body>
       <nav>
@@ -239,34 +241,34 @@
               </div>
               <div id="gallery3" class="gallery">
                 <div class="gallery-item">
-                    <img src="images/design/bear-01.png" alt="Bear Illustration" class="img-responsive design-item">
+                    <img src="images/design/bear-01.png" alt="Bear Illustration" class="img-responsive design-item" onclick="modalOn(1)">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/design/G4-mountian.png" alt="Mobile Mountian Design" class="img-responsive design-item">
+                    <img src="images/design/G4-mountian.png" alt="Mobile Mountian Design" class="img-responsive design-item" onclick="modalOn(2)">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/design/MistikLogo.png" alt="Mistik Logo" class="img-responsive design-item">
+                    <img src="images/design/MistikLogo.png" alt="Mistik Logo" class="img-responsive design-item" onclick="modalOn(3)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/Chrono_GRN_01.png" alt="Chrono Scheduling Logo" class="img-responsive design-item">
+                  <img src="images/design/Chrono_GRN_01.png" alt="Chrono Scheduling Logo" class="img-responsive design-item" onclick="modalOn(4)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/ag-004.png" alt="Pyramid" class="img-responsive design-item">
+                  <img src="images/design/ag-004.png" alt="Pyramid" class="img-responsive design-item" onclick="modalOn(5)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/ISO-Building-001.png" alt="Isometric building" class="img-responsive design-item">
+                  <img src="images/design/ISO-Building-001.png" alt="Isometric building" class="img-responsive design-item" onclick="modalOn(6)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/Kingdom.png" alt="Kingdom Design" class="img-responsive design-item">
+                  <img src="images/design/Kingdom.png" alt="Kingdom Design" class="img-responsive design-item" onclick="modalOn(7)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/raven-01.png" alt="Raven" class="img-responsive design-item">
+                  <img src="images/design/raven-01.png" alt="Raven" class="img-responsive design-item" onclick="modalOn(8)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/Rocketship-02.png" alt="Rocketship" class="img-responsive design-item">
+                  <img src="images/design/Rocketship-02.png" alt="Rocketship" class="img-responsive design-item" onclick="modalOn(9)">
                 </div>
                 <div class="gallery-item">
-                  <img src="images/design/toaster.png" alt="Toaster" class="img-responsive design-item">
+                  <img src="images/design/toaster.png" alt="Toaster" class="img-responsive design-item" onclick="modalOn(10)">
                 </div>
               </div>
               <h2>Wireframes</h2>
@@ -288,6 +290,12 @@
                     <h4>Desktop</h4>
                   </div>
                   <img src="images/design/Desktop-Wireframe-color.png" alt="Wireframe design" class="img-responsive design-item">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <div id="modal-content" class="modal-content">
+                  <span class="close">&times</span>
+                  <div id="myTarget"></div>
                 </div>
               </div>
               <!-- <div class="color-box">

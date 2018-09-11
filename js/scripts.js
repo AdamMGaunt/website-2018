@@ -135,3 +135,42 @@ function sliderInit(num) {
 function hoverIcons() {
   // toggle the menu icons
 }
+
+// Modal functions
+
+var modal = document.getElementById('myModal');
+
+// get the button
+var btn = document.getElementById('myBtn');
+
+// Get the <span> that closes the Modal
+var span = document.getElementsByClassName('close')[0];
+
+// When the user clicks on the button, open the modalin
+// btn.onclick = function() {
+//   console.log('modal open');
+//   modal.style.display = 'block';
+// }
+function modalOn(num) {
+  console.log('modal open');
+  modal.style.display = 'block';
+  var baa = imgArray[(num-1)];
+  var foo = "<h4>" + baa.title + "</h4>";
+  foo += "<p>" + baa.content + "</p>";
+  foo += baa.image;
+  document.getElementById('myTarget').innerHTML = foo;
+}
+
+// When the user clicks on the span (x), close the modalin
+span.onclick = function() {
+  console.log('modal close');
+  modal.style.display = 'none';
+}
+
+// when the user clicks anywhere outside the modalin
+window.onclick = function(event) {
+  if(event.target == modal) {
+    console.log('modal close');
+    modal.style.display = 'none';
+  }
+}
