@@ -18,11 +18,15 @@ nav .nav-brand {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 0.8rem;
     text-align: left;
 }
 nav .nav-brand a {
     color: $white;
+  }
+nav .nav-brand a img {
+    width: 1.5rem;
+    height: auto;
 }
 
 nav .nav-collapse:hover {
@@ -70,16 +74,18 @@ nav .nav-collapse .menu-icon i {
     display: none;
     text-align: center;
 }
-.navbar-lg .nav-top-lg {
+.navbar-lg > .nav-top-lg {
     display: inline-block;
     width: 100%;
 }
+
 .navbar-lg .nav-top-lg li {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    padding: 20px 10px;
+    padding: 0 10px;
 }
 .navbar-lg .nav-top-lg li a {
     color: $white;
+    font-size: 0.8rem;
 }

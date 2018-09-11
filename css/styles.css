@@ -38,11 +38,15 @@ nav .nav-brand {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 0.8rem;
   text-align: left; }
 
 nav .nav-brand a {
   color: #FFFFFF; }
+
+nav .nav-brand a img {
+  width: 1.5rem;
+  height: auto; }
 
 nav .nav-collapse:hover {
   cursor: pointer; }
@@ -85,7 +89,7 @@ nav .nav-collapse .menu-icon i {
   display: none;
   text-align: center; }
 
-.navbar-lg .nav-top-lg {
+.navbar-lg > .nav-top-lg {
   display: inline-block;
   width: 100%; }
 
@@ -93,10 +97,11 @@ nav .nav-collapse .menu-icon i {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  padding: 20px 10px; }
+  padding: 0 10px; }
 
 .navbar-lg .nav-top-lg li a {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 0.8rem; }
 
 /* Round Cornors */
 /* Linear Gradients*/
@@ -112,15 +117,14 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  line-height: 51px;
-  font-size: 46px;
+  line-height: 85px;
+  font-size: 80px;
   text-transform: uppercase;
   margin: 0 0 23px 0; }
 
 h2, h3, h4, h5 {
-  font-family: "Droid Serif", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 20px;
   line-height: 23px;
   margin: 0 0 23px 0; }
@@ -200,21 +204,67 @@ a:active {
 
 /* Feature Image/box */
 .feature {
+  position: relative;
+  overflow: hidden;
   /*Photo by Aperture Vintage on Unsplash 2018*/
   /*
     background-image: url('../images/G4-mountian.png');
     background-image: url('https://via.placeholder.com/1920x1080');
-    */
+    */ }
+
+.feature .background {
+  position: absolute;
   background-image: url("../images/aperture-vintage-lg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
-  height: 809px; }
-
-.feature div {
-  position: relative;
   height: 100%;
+  -webkit-animation: zoomin 30s ease-in infinite;
+  animation: zoomin 30s ease-in infinite;
+  transition: all .25s ease-in-out;
+  overflow: hidden; }
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.25); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.25); }
+  100% {
+    transform: scale(1); } }
+
+/*End of Zoom in Keyframes */
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.85); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomout {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.85); }
+  100% {
+    transform: scale(1); } }
+
+/*End of Zoom out Keyframes */
+.feature div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
   padding-top: calc(50% - 1rem);
   background: rgba(0, 0, 0, 0.5);
   /* Old browsers */
@@ -329,6 +379,9 @@ a:active {
 
 .gallery-title h2 {
   /*border-bottom: 1px solid gainsboro;*/ }
+
+.gallery-item .design-item {
+  overflow: hidden; }
 
 /* buttons */
 .btn-gallery {

@@ -21,15 +21,14 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-family: $font-stack-titles;
     font-weight: 700;
-    line-height: 51px;
-    font-size: 46px;
+    line-height: 85px;
+    font-size: 80px;
     text-transform: uppercase;
     margin: 0 0 23px 0;
 }
 h2, h3, h4, h5 {
-    font-family: $font-stack;
+    font-family: $font-stack-titles;
     font-weight: 400;
-    font-style: italic;
     font-size: 20px;
     line-height: 23px;
     margin: 0 0 23px 0;
@@ -94,7 +93,6 @@ a:visited {
 
 }
 
-
 /* buttons */
 .btn-main {
     @include roundedCorners(5);
@@ -120,21 +118,57 @@ a:visited {
 
 /* Feature Image/box */
 .feature {
+  position: relative;
+  overflow: hidden;
     /*Photo by Aperture Vintage on Unsplash 2018*/
     /*
     background-image: url('../images/G4-mountian.png');
     background-image: url('https://via.placeholder.com/1920x1080');
     */
-    background-image: url('../images/aperture-vintage-lg.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: 809px;
+
 }
+.feature .background {
+  position: absolute;
+  background-image: url('../images/aperture-vintage-lg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  -webkit-animation: zoomin 30s ease-in infinite;
+  animation: zoomin 30s ease-in infinite;
+  transition: all .25s ease-in-out;
+  overflow: hidden;
+}
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.25);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.25);}
+  100% {transform: scale(1);}
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.85);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.85);}
+  100% {transform: scale(1);}
+}/*End of Zoom out Keyframes */
+
 .feature div {
-    position: relative;
+    position: absolute;
+    width: 100%;
     height: 100%;
+    margin-top: 0;
     padding-top: calc(50% - 1rem);
     @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
     /*
@@ -241,6 +275,10 @@ a:visited {
 }
 .gallery-title h2 {
     /*border-bottom: 1px solid gainsboro;*/
+}
+
+.gallery-item .design-item {
+  overflow: hidden;
 }
 
 
