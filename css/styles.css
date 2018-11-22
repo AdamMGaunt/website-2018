@@ -103,9 +103,6 @@ nav .nav-collapse .menu-icon i {
   color: #FFFFFF;
   font-size: 0.8rem; }
 
-/* Round Cornors */
-/* Linear Gradients*/
-/* Breakpoints */
 .modal {
   display: none;
   position: fixed;
@@ -145,6 +142,9 @@ nav .nav-collapse .menu-icon i {
   text-decoration: none;
   cursor: pointer; }
 
+/* Round Cornors */
+/* Linear Gradients*/
+/* Breakpoints */
 body {
   background-color: #fff;
   font-family: "Oswald", sans-serif;
