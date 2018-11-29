@@ -24,7 +24,7 @@ h1 {
     font-weight: 700;
     line-height: 85px;
     font-size: 80px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin: 0 0 23px 0;
 }
 h2, h3, h4, h5 {
@@ -47,6 +47,7 @@ p {
 }
 
 header {
+    padding-top: 65px;
     text-align: center;
     h1 {
         margin-bottom: 0;
@@ -239,14 +240,18 @@ a:visited {
 .gallery .gallery-item {
     display: block;
     width: 100%;
-    height: auto;
+    height: 500px;
     border: 1px solid gainsboro;
     background-color: #fff;
-    margin-bottom: 5px;
-    box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+    // margin-bottom: 5px;
+    z-index: 1;
+    overflow: hidden;
 }
 .gallery .gallery-item:hover {
-    box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    border: 1px solid #999;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 9;
+    cursor: pointer;
 }
 .gallery .gallery-item .gallery-content p {
     text-align: center;
@@ -293,6 +298,7 @@ a:visited {
     background-color: $red-orange;
     padding: 10px 15px;
     @include buttonBorders(2,$red-orange);
+    outline: none;
 }
 .btn-gallery {
     color: $white;
@@ -487,7 +493,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: block;
             width: 100%;
-            height: auto;
+            height: 250px;
         }
         .nav-top {
             width: 100%;
@@ -529,7 +535,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: inline-block;
             width: 49.5%;
-            height: auto;
+            height: 350px;
         }
         .contact {
             width: 500px;
@@ -554,7 +560,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: inline-block;
             width: 24%;
-            height: auto;
+            height: 200px;
         }
         .contact {
             width: 600px;

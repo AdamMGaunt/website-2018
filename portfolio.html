@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Gaunt</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- load in image array -->
+    <script src="js/images.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <nav>
+          <div class="nav-collapse">
+              <div class="menu-icon">
+                  <i class="fa fa-bars"></i>
+              </div>
+          </div>
+          <div class="nav-brand">
+              <a href="#top" class="nav-btn">
+                <img src="images/favicon.png" alt="logo" class="img-responsive">
+              </a>
+          </div>
+          <div class="navbar">
+              <ul id="nav-top" class="nav-top">
+                  <li>
+                      <a href="index.html#top" class="nav-btn">home</a>
+                  </li>
+                  <li>
+                      <a href="#" class="nav-btn">services</a>
+                  </li>
+                  <li>
+                      <a href="portfolio.html" class="nav-btn">portfolio</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="nav-btn">contact</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="navbar-lg">
+              <ul id="nav-top-lg" class="nav-top-lg">
+                  <li>
+                      <a href="index.html#top" class="nav-btn">home</a>
+                  </li>
+                  <li>
+                      <a href="#" class="nav-btn">services</a>
+                  </li>
+                  <li>
+                      <a href="portfolio.html" class="nav-btn">portfolio</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="nav-btn">contact</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <header>
+          <div id="top"></div>
+          <h1>Portfolio</h1>
+          <!-- <i class="fa fa-code"></i> -->
+          <h4>Websites - Projects - Design</h4>
+      </header>
+      <main>
+          <div id="section1" class="content">
+              <div class="sort-btn text-center">
+                  <button type="button" class="btn-gallery" onclick="sortGallery('all')">all</button>
+                  <button type="button" class="btn-gallery" onclick="sortGallery('design')">design</button>
+                  <button type="button" class="btn-gallery" onclick="sortGallery('project')">projects</button>
+                  <button type="button" class="btn-gallery" onclick="sortGallery('web')">websites</button>
+              </div>
+              <div id="gallery1" class="gallery">
+                <div class="gallery-item">
+                    <img src="images/design/bear-01.png" alt="Bear Illustration" class="img-responsive design-item" onclick="modalOn(1)">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <div id="modal-content" class="modal-content">
+                  <span class="close">&times</span>
+                  <div id="myTarget"></div>
+                </div>
+              </div>
+          </div>
+      </main>
+      <footer>
+          <div class="nav-bottom">
+              <ul>
+                  <li>
+                      <a href="index.html#top" class="nav-btn">home</a>
+                  </li>
+                  <li>
+                      <a href="#" class="nav-btn">services</a>
+                  </li>
+                  <li>
+                      <a href="portfolio.html" class="nav-btn">portfolio</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="nav-btn">contact</a>
+                  </li>
+              </ul>
+          </div>
+          <p class="copyright">&copy; Designed and Developed by Adam Gaunt, 2018.</p>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/portfolio.js" type="text/javascript"></script>
+  </body>
+</html>

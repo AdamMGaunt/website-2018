@@ -158,6 +158,9 @@ function modalOn(num) {
   var foo = "<h4>" + baa.title + "</h4>";
   foo += "<p>" + baa.content + "</p>";
   foo += baa.image;
+  if(baa.link !== '') {
+      foo += "<p>" + baa.link + "</p>";
+  }
   document.getElementById('myTarget').innerHTML = foo;
 }
 
