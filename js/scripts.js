@@ -72,8 +72,20 @@ window.addEventListener("optimizedResize", function() {
     pageInit();
 });
 
-/*
-*/
+/* Smooth Scroll in services page */
+$(".price-btn").click(function (){
+    var link = this.attributes[0].value;
+    console.log(link);
+    if($(link).id === 'top') {
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+    } else {
+        $('html, body').animate({
+            scrollTop: ($(link).offset().top -50)
+        }, 1000);
+    }
+});
 
 $('.nav-collapse').click(function(){
     // console.log("slide");

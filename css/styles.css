@@ -510,6 +510,62 @@ a:active {
   height: auto;
   margin: 0 auto; }
 
+#services {
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto;
+  display: block; }
+
+#services .content-block {
+  display: inline-block;
+  width: 49%; }
+
+#services .main {
+  float: left;
+  padding-top: calc( (200px / 2) - 1rem);
+  font-size: 3rem; }
+
+#services .content-block {
+  margin-bottom: 23px; }
+
+#services .content-block p {
+  margin-bottom: 0; }
+
+#services .content-block ul {
+  padding-left: 40px; }
+
+.package {
+  margin: 1rem 0; }
+
+/* Pricing */
+.price-box {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.pricing {
+  display: inline-block;
+  width: 33%; }
+  .pricing .small {
+    padding: 0;
+    margin: 10px;
+    color: #888; }
+  .pricing p {
+    font-style: italic;
+    margin-bottom: 0;
+    padding: 0; }
+  .pricing h3 {
+    border-bottom: none;
+    font-size: 3rem; }
+    .pricing h3 small {
+      font-size: 1rem; }
+  .pricing ul li {
+    list-style-type: none;
+    font-size: 0.8rem; }
+  .pricing button {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
 /* Contact */
 #bottom {
   background-image: url("../images/aperture-vintage-lg.jpg");
@@ -638,6 +694,12 @@ footer .nav-bottom ul li a:active {
     padding-top: 2rem; }
   .icons i {
     padding: 0 1rem; }
+  #services .content-block {
+    display: inline-block;
+    width: 100%; }
+  #services .main {
+    float: none;
+    padding-top: 0; }
   footer .nav-bottom ul li {
     text-align: center;
     border-right: none; }
@@ -663,6 +725,12 @@ footer .nav-bottom ul li a:active {
     height: auto; }
   .icons {
     padding-top: 1rem; }
+  #services .content-block {
+    display: inline-block;
+    width: 100%; }
+  #services .main {
+    float: none;
+    padding-top: 0; }
   footer .nav-bottom ul li {
     border-right: 1px solid #D9D9D9; }
   footer > .nav-bottom > ul > li:nth-child(6) {
@@ -684,6 +752,12 @@ footer .nav-bottom ul li a:active {
     display: none; }
   .navbar-lg, .nav-brand {
     display: inline-block; }
+  #services .content-block {
+    display: inline-block;
+    width: 49%; }
+  #services .main {
+    float: left;
+    padding-top: calc( (200px / 2) - 1rem); }
   footer .nav-bottom ul li {
     border-right: 1px solid #D9D9D9; }
   footer > .nav-bottom > ul > li:nth-child(6) {
@@ -694,6 +768,12 @@ footer .nav-bottom ul li a:active {
   .contact {
     width: 800px;
     height: auto; }
+  #services .content-block {
+    display: inline-block;
+    width: 49%; }
+  #services .main {
+    float: left;
+    padding-top: calc( (200px / 2) - 1rem); }
   footer .nav-bottom ul li {
     border-right: 1px solid #D9D9D9; }
   footer > .nav-bottom > ul > li:nth-child(6) {
