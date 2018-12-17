@@ -46,13 +46,14 @@ GIT Commands
     git commit -m "message"
 
 3) Push files up to database
-    git push 
+    git push
 
 
 GITFlow instructions
 
 1) Create a new feature branch
     git flow feature start feature_branch
+    use git noramlly and rememeber to stop scss before finishing
 
 2) Finish feature branch
     git flow feature finish feature_branch

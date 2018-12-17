@@ -5,9 +5,9 @@
 
 @import 'navigation';
 
-@import 'mixins';
-
 @import 'modal';
+
+@import 'mixins';
 
 body {
     background-color: #fff;
@@ -24,7 +24,7 @@ h1 {
     font-weight: 700;
     line-height: 85px;
     font-size: 80px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin: 0 0 23px 0;
 }
 h2, h3, h4, h5 {
@@ -47,6 +47,7 @@ p {
 }
 
 header {
+    padding-top: 65px;
     text-align: center;
     h1 {
         margin-bottom: 0;
@@ -76,6 +77,10 @@ footer .copyright {
 }
 main p {
     padding: 10px;
+}
+/* Core */
+.text-center {
+    text-align: center;
 }
 
 /* Links */
@@ -235,14 +240,18 @@ a:visited {
 .gallery .gallery-item {
     display: block;
     width: 100%;
-    height: auto;
+    height: 500px;
     border: 1px solid gainsboro;
     background-color: #fff;
-    margin-bottom: 5px;
-    box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+    // margin-bottom: 5px;
+    z-index: 1;
+    overflow: hidden;
 }
 .gallery .gallery-item:hover {
-    box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    border: 1px solid #999;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 9;
+    cursor: pointer;
 }
 .gallery .gallery-item .gallery-content p {
     text-align: center;
@@ -289,6 +298,7 @@ a:visited {
     background-color: $red-orange;
     padding: 10px 15px;
     @include buttonBorders(2,$red-orange);
+    outline: none;
 }
 .btn-gallery {
     color: $white;
@@ -366,6 +376,71 @@ a:visited {
     margin: 0 auto;
 }
 
+#services {
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#services .content-block {
+    display: inline-block;
+    width: 49%;
+}
+#services .main {
+    float: left;
+    padding-top: calc( (200px / 2) - 1rem );
+    font-size: 3rem;
+}
+#services .content-block {
+    margin-bottom: 23px;
+}
+#services .content-block p {
+    margin-bottom: 0;
+}
+#services .content-block ul {
+    padding-left: 40px;
+}
+
+.package {
+    margin: 1rem 0;
+}
+
+/* Pricing */
+.price-box {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.pricing {
+    display: inline-block;
+    width: 33%;
+    .small {
+        padding: 0;
+        margin: 10px;
+        color: #888;
+    }
+    p {
+        font-style: italic;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    h3 {
+        border-bottom: none;
+        font-size: 3rem;
+        small {
+            font-size: 1rem;
+        }
+    }
+    ul li {
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+    button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 /* Contact */
 #bottom {
     background-image: url('../images/aperture-vintage-lg.jpg');
@@ -377,7 +452,7 @@ a:visited {
     @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
     height: 100%;
 }
-.contact {
+#bottom > .contact {
     //
     display: block;
     text-align: center;
@@ -387,21 +462,30 @@ a:visited {
     padding-bottom: 2rem;
     color: $white;
 }
+.contact {
+    //
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
 .contact i {
     font-size: 2rem;
 }
-.contact .form-item {
-    padding-top: 20px;
-}
-.contact .form-item input {
-    border-radius: 5px;
-    width: 100%;
-    height: 2rem;
-}
-.contact .form-item textarea {
+.contact textarea, input {
     border-radius: 5px;
     width: 100%;
     height: 5rem;
+}
+.contact p {
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.contact .form-item {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
 }
 .contact a i {
     font-size: 2rem;
@@ -412,6 +496,36 @@ a:visited {
     color: $red-orange;
 }
 .contact a i:active {
+    color: $flax;
+}
+
+.cta-content i {
+    font-size: 2rem;
+}
+.cta-content textarea, input {
+    border-radius: 5px;
+    width: 100%;
+    height: 5rem;
+}
+.cta-content p {
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.cta-content .form-item {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+}
+.cta-content a i {
+    font-size: 2rem;
+    color: $white;
+}
+/* Icon links */
+.cta-content a i:hover {
+    color: $red-orange;
+}
+.cta-content a i:active {
     color: $flax;
 }
 
@@ -471,7 +585,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: block;
             width: 100%;
-            height: auto;
+            height: 250px;
         }
         .nav-top {
             width: 100%;
@@ -484,6 +598,14 @@ footer .nav-bottom ul li {
         }
         .icons i {
             padding: 0 1rem;
+        }
+        #services .content-block {
+            display: inline-block;
+            width: 100%;
+        }
+        #services .main {
+            float: none;
+            padding-top: 0;
         }
         footer .nav-bottom ul li {
             text-align: center;
@@ -513,7 +635,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: inline-block;
             width: 49.5%;
-            height: auto;
+            height: 350px;
         }
         .contact {
             width: 500px;
@@ -521,6 +643,14 @@ footer .nav-bottom ul li {
         }
         .icons {
             padding-top: 1rem;
+        }
+        #services .content-block {
+            display: inline-block;
+            width: 100%;
+        }
+        #services .main {
+            float: none;
+            padding-top: 0;
         }
         footer .nav-bottom ul li {
             border-right: 1px solid $gainsboro;
@@ -538,7 +668,7 @@ footer .nav-bottom ul li {
         .gallery .gallery-item {
             display: inline-block;
             width: 24%;
-            height: auto;
+            height: 200px;
         }
         .contact {
             width: 600px;
@@ -550,6 +680,14 @@ footer .nav-bottom ul li {
         }
         .navbar-lg, .nav-brand {
             display: inline-block;
+        }
+        #services .content-block {
+            display: inline-block;
+            width: 49%;
+        }
+        #services .main {
+            float: left;
+            padding-top: calc( (200px / 2) - 1rem );
         }
         footer .nav-bottom ul li {
             border-right: 1px solid $gainsboro;
@@ -564,6 +702,14 @@ footer .nav-bottom ul li {
         .contact {
             width: 800px;
             height: auto;
+        }
+        #services .content-block {
+            display: inline-block;
+            width: 49%;
+        }
+        #services .main {
+            float: left;
+            padding-top: calc( (200px / 2) - 1rem );
         }
         footer .nav-bottom ul li {
             border-right: 1px solid $gainsboro;
