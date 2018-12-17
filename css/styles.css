@@ -592,7 +592,7 @@ a:active {
   /* IE6-9 */
   height: 100%; }
 
-#bottom .contact {
+#bottom > .contact {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -601,14 +601,11 @@ a:active {
   padding-bottom: 2rem;
   color: #FFFFFF; }
 
-#contact .contact {
+.contact {
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding: 3rem 1rem;
-  text-align: center;
-  padding-bottom: 2rem;
-  max-width: 600px; }
+  text-align: center; }
 
 .contact i {
   font-size: 2rem; }
@@ -619,7 +616,7 @@ a:active {
   height: 5rem; }
 
 .contact p {
-  text-align: left;
+  text-align: center;
   margin: 0 10px 0 0; }
 
 .contact .form-item {
@@ -637,6 +634,35 @@ a:active {
   color: #F6574C; }
 
 .contact a i:active {
+  color: #EDE580; }
+
+.cta-content i {
+  font-size: 2rem; }
+
+.cta-content textarea, input {
+  border-radius: 5px;
+  width: 100%;
+  height: 5rem; }
+
+.cta-content p {
+  text-align: center;
+  margin: 0 10px 0 0; }
+
+.cta-content .form-item {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem; }
+
+.cta-content a i {
+  font-size: 2rem;
+  color: #FFFFFF; }
+
+/* Icon links */
+.cta-content a i:hover {
+  color: #F6574C; }
+
+.cta-content a i:active {
   color: #EDE580; }
 
 /* Footer */
