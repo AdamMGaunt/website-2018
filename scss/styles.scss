@@ -47,7 +47,6 @@ p {
 }
 
 header {
-    padding-top: 65px;
     text-align: center;
     h1 {
         margin-bottom: 0;
@@ -119,7 +118,9 @@ a:visited {
 }
 .btn-main:hover {
     background-color: $white;
-
+}
+.sort-btn > button {
+    margin: 5px;
 }
 
 /* Feature Image/box */
@@ -400,7 +401,9 @@ a:visited {
 #services .content-block ul {
     padding-left: 40px;
 }
-
+#services-page, #portfolio-page {
+    padding-top: 65px;
+}
 .package {
     margin: 1rem 0;
 }
@@ -579,6 +582,9 @@ footer .nav-bottom ul li {
 
     /* Custom, iPhone Retina */
     @media only screen and (min-width : 320px) {
+        #services {
+            padding-top: 65px;
+        }
         .gallery {
             display: block;
         }
@@ -606,6 +612,46 @@ footer .nav-bottom ul li {
         #services .main {
             float: none;
             padding-top: 0;
+        }
+        /* Modal */
+        .modal-image {
+            width: 100%;
+            height: auto;
+        }
+        /* Pricing */
+        .price-box {
+            display: block;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .pricing {
+            display: inline-block;
+            width: 100%;
+            .small {
+                padding: 0;
+                margin: 10px;
+                color: #888;
+            }
+            p {
+                font-style: italic;
+                margin-bottom: 0;
+                padding: 0;
+            }
+            h3 {
+                border-bottom: none;
+                font-size: 3rem;
+                small {
+                    font-size: 1rem;
+                }
+            }
+            ul li {
+                list-style-type: none;
+                font-size: 0.8rem;
+            }
+            button {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
         }
         footer .nav-bottom ul li {
             text-align: center;

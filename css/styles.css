@@ -179,7 +179,6 @@ p {
   margin: 0 0 23px 0; }
 
 header {
-  padding-top: 65px;
   text-align: center; }
   header h1 {
     margin-bottom: 0; }
@@ -244,6 +243,9 @@ a:active {
 
 .btn-main:hover {
   background-color: #FFFFFF; }
+
+.sort-btn > button {
+  margin: 5px; }
 
 /* Feature Image/box */
 .feature {
@@ -534,6 +536,9 @@ a:active {
 #services .content-block ul {
   padding-left: 40px; }
 
+#services-page, #portfolio-page {
+  padding-top: 65px; }
+
 .package {
   margin: 1rem 0; }
 
@@ -706,6 +711,8 @@ footer .nav-bottom ul li a:active {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
+  #services {
+    padding-top: 65px; }
   .gallery {
     display: block; }
   .gallery .gallery-item {
@@ -726,6 +733,37 @@ footer .nav-bottom ul li a:active {
   #services .main {
     float: none;
     padding-top: 0; }
+  /* Modal */
+  .modal-image {
+    width: 100%;
+    height: auto; }
+  /* Pricing */
+  .price-box {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .pricing {
+    display: inline-block;
+    width: 100%; }
+    .pricing .small {
+      padding: 0;
+      margin: 10px;
+      color: #888; }
+    .pricing p {
+      font-style: italic;
+      margin-bottom: 0;
+      padding: 0; }
+    .pricing h3 {
+      border-bottom: none;
+      font-size: 3rem; }
+      .pricing h3 small {
+        font-size: 1rem; }
+    .pricing ul li {
+      list-style-type: none;
+      font-size: 0.8rem; }
+    .pricing button {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
   footer .nav-bottom ul li {
     text-align: center;
     border-right: none; }
