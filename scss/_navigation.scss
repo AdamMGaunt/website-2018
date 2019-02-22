@@ -4,14 +4,20 @@
   position: sticky;
 }
 .navbar-toggler {
-  padding-top: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
   float: right;
 }
 .navbar-nav {
   list-style-type: none;
 }
 .navbar-nav li {
-  padding: 15px 20px;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+nav .navbar-brand img {
+    width: 4rem;
+    height: auto;
 }
 //
 // nav {

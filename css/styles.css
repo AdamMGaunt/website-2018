@@ -21,14 +21,20 @@ html {
   position: sticky; }
 
 .navbar-toggler {
-  padding-top: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
   float: right; }
 
 .navbar-nav {
   list-style-type: none; }
 
 .navbar-nav li {
-  padding: 15px 20px; }
+  padding-top: 30px;
+  padding-left: 15px; }
+
+nav .navbar-brand img {
+  width: 4rem;
+  height: auto; }
 
 .modal {
   display: none;
@@ -80,9 +86,16 @@ main {
   width: 100%;
   display: block; }
 
+footer {
+  text-align: center;
+  font-size: 1rem; }
+
 section {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.row {
+  margin-top: 20px; }
 
 .feature {
   padding-top: 100px;
@@ -176,49 +189,25 @@ a:active {
 /* Feature Image/box */
 .feature {
   position: relative;
-  overflow: hidden;
-  /*Photo by Aperture Vintage on Unsplash 2018*/
-  /*
-    background-image: url('../images/G4-mountian.png');
-    background-image: url('https://via.placeholder.com/1920x1080');
-    */ }
+  overflow: hidden; }
 
-/* Zoom in Keyframes */
-@-webkit-keyframes zoomin {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.25); }
-  100% {
-    transform: scale(1); } }
+/* cards */
+.card {
+  padding: 10px; }
 
-@keyframes zoomin {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.25); }
-  100% {
-    transform: scale(1); } }
+/* Bottom Navigation */
+#bottom-nav {
+  text-align: center; }
 
-/*End of Zoom in Keyframes */
-/* Zoom out Keyframes */
-@-webkit-keyframes zoomout {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.85); }
-  100% {
-    transform: scale(1); } }
+#bottom-nav ul {
+  list-style-type: none;
+  padding: 0; }
 
-@keyframes zoomout {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.85); }
-  100% {
-    transform: scale(1); } }
+#bottom-nav ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center; }
 
-/*End of Zoom out Keyframes */
 .feature {
   background: rgba(0, 0, 0, 0.5);
   /* Old browsers */
@@ -236,12 +225,6 @@ a:active {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
-  /*
-    background: linear-gradient(
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.8)
-    );
-    */
   color: #FFFFFF; }
 
 .feature > div > i {
@@ -362,121 +345,6 @@ a:active {
 .btn-gallery:hover {
   background-color: #FFFFFF; }
 
-/* color examples */
-.color-box {
-  display: block;
-  margin: 0 auto;
-  text-align: center; }
-
-.color-box div {
-  display: inline-block;
-  width: 100px;
-  height: 100px; }
-
-.color-box div:nth-child(1) {
-  background-color: #EDE580; }
-
-.color-box div:nth-child(2) {
-  background-color: #A4AF69; }
-
-.color-box div:nth-child(3) {
-  background-color: #3C787E; }
-
-.color-box div:nth-child(4) {
-  background-color: #52414C; }
-
-.color-box div:nth-child(5) {
-  background-color: #F6574C; }
-
-/* CTA */
-.cta {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #3C6E71;
-  /*
-    background: linear-gradient(
-        $ming,
-        $red-orange
-    );
-    */
-  padding: 2rem; }
-
-.cta .cta-content {
-  display: inline-block;
-  color: #fff; }
-
-.cta .cta-content h2 {
-  margin-bottom: 0; }
-
-.cta button {
-  background-color: #3C6E71;
-  padding: 10px 15px;
-  border: 2px solid #fff; }
-
-/* Design */
-#section3 {
-  height: auto;
-  margin: 0 auto; }
-
-#services {
-  height: auto;
-  margin: 0 auto;
-  display: block; }
-
-#services .content-block {
-  display: inline-block;
-  width: 49%; }
-
-#services .main {
-  float: left;
-  padding-top: calc( (200px / 2) - 1rem);
-  font-size: 3rem; }
-
-#services .content-block {
-  margin-bottom: 23px; }
-
-#services .content-block p {
-  margin-bottom: 0; }
-
-#services .content-block ul {
-  padding-left: 40px; }
-
-#services-page, #portfolio-page {
-  padding-top: 65px; }
-
-.package {
-  margin: 1rem 0; }
-
-/* Pricing */
-.price-box {
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.pricing {
-  display: inline-block;
-  width: 33%; }
-  .pricing .small {
-    padding: 0;
-    margin: 10px;
-    color: #888; }
-  .pricing p {
-    font-style: italic;
-    margin-bottom: 0;
-    padding: 0; }
-  .pricing h3 {
-    border-bottom: none;
-    font-size: 3rem; }
-    .pricing h3 small {
-      font-size: 1rem; }
-  .pricing ul li {
-    list-style-type: none;
-    font-size: 0.8rem; }
-  .pricing button {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-
 /* Contact */
 .contact {
   display: block;
@@ -559,17 +427,45 @@ a:active {
   height: 3rem; }
 
 /* CSS Animations */
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.25); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.25); }
+  100% {
+    transform: scale(1); } }
+
+/*End of Zoom in Keyframes */
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.85); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomout {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.85); }
+  100% {
+    transform: scale(1); } }
+
+/*End of Zoom out Keyframes */
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  #services {
-    padding-top: 65px; }
-  .gallery {
-    display: block; }
-  .gallery .gallery-item {
-    display: block;
-    width: 100%;
-    height: 250px; }
   .nav-top {
     width: 100%; }
   .content p {
@@ -578,93 +474,24 @@ a:active {
     padding-top: 2rem; }
   .icons i {
     padding: 0 1rem; }
-  #services .content-block {
-    display: inline-block;
-    width: 100%; }
-  #services .main {
-    float: none;
-    padding-top: 0; }
   /* Modal */
   .modal-image {
     width: 100%;
-    height: auto; }
-  /* Pricing */
-  .price-box {
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-  .pricing {
-    display: inline-block;
-    width: 100%; }
-    .pricing .small {
-      padding: 0;
-      margin: 10px;
-      color: #888; }
-    .pricing p {
-      font-style: italic;
-      margin-bottom: 0;
-      padding: 0; }
-    .pricing h3 {
-      border-bottom: none;
-      font-size: 3rem; }
-      .pricing h3 small {
-        font-size: 1rem; }
-    .pricing ul li {
-      list-style-type: none;
-      font-size: 0.8rem; }
-    .pricing button {
-      margin-top: 1rem;
-      margin-bottom: 1rem; } }
+    height: auto; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .nav-top {
     width: 100%; }
-  .gallery {
-    display: block; }
-  .gallery .gallery-item {
-    display: inline-block;
-    width: 49.5%;
-    height: 350px; }
-  .contact {
-    width: 500px;
-    height: auto; }
   .icons {
     padding-top: 1rem; }
-  #services .content-block {
-    display: inline-block;
-    width: 100%; }
-  #services .main {
-    float: none;
-    padding-top: 0; } }
+  .navbar-toggler {
+    display: none; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  .gallery {
-    display: block; }
-  .gallery .gallery-item {
-    display: inline-block;
-    width: 24%;
-    height: 200px; }
-  .contact {
-    width: 600px;
-    height: auto; }
-  #services .content-block {
-    display: inline-block;
-    width: 49%; }
-  #services .main {
-    float: left;
-    padding-top: calc( (200px / 2) - 1rem); } }
+  .navbar-toggler {
+    display: none; } }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  .contact {
-    width: 800px;
-    height: auto; }
-  #services .content-block {
-    display: inline-block;
-    width: 49%; }
-  #services .main {
-    float: left;
-    padding-top: calc( (200px / 2) - 1rem); } }

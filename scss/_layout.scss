@@ -17,12 +17,18 @@ main {
 
 footer {
   //
+  text-align: center;
+  font-size: 1rem;
 }
 
 section {
   //
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.row {
+  margin-top: 20px;
 }
 
 .feature {
