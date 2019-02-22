@@ -7,6 +7,8 @@
 
 @import 'modal';
 
+@import 'layout';
+
 @import 'mixins';
 
 body {
@@ -30,7 +32,7 @@ h1 {
 h2, h3, h4, h5 {
     font-family: $font-stack-titles;
     font-weight: 400;
-    font-size: 20px;
+    // font-size: 20px;
     line-height: 23px;
     margin: 0 0 23px 0;
 }
@@ -41,38 +43,20 @@ h3 {
 }
 p {
     font-family: $font-stack;
-    font-size: 15px;
+    // font-size: 15px;
     line-height: 23px;
     margin: 0 0 23px 0;
 }
 
 header {
     text-align: center;
+    display: block;
     h1 {
         margin-bottom: 0;
     }
     h4 {
         margin-top: 0;
     }
-}
-main {
-    width: 100%;
-    /*
-    background-image: url('../images/fishing.jpg');
-    background-image: url('../images/G4-mountian.png');
-    */
-}
-footer {
-    padding: 20px;
-    background-color: $myrtle-green;
-    color: #fff;
-    width: 100%;
-}
-footer p {
-    text-align: center;
-}
-footer .copyright {
-  font-size: 0.6rem;
 }
 main p {
     padding: 10px;
@@ -81,6 +65,7 @@ main p {
 .text-center {
     text-align: center;
 }
+
 
 /* Links */
 a {
@@ -127,6 +112,10 @@ a:visited {
 .feature {
   position: relative;
   overflow: hidden;
+  div {
+
+  }
+
     /*Photo by Aperture Vintage on Unsplash 2018*/
     /*
     background-image: url('../images/G4-mountian.png');
@@ -134,18 +123,18 @@ a:visited {
     */
 
 }
-.feature .background {
-  position: absolute;
-  background-image: url('../images/aperture-vintage-lg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  -webkit-animation: zoomin 30s ease-in infinite;
-  animation: zoomin 30s ease-in infinite;
-  transition: all .25s ease-in-out;
-  overflow: hidden;
-}
+// .feature .background {
+//   position: absolute;
+//   // background-image: url('../images/aperture-vintage-lg.jpg');
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   height: 100%;
+//   // -webkit-animation: zoomin 30s ease-in infinite;
+//   // animation: zoomin 30s ease-in infinite;
+//   // transition: all .25s ease-in-out;
+//   overflow: hidden;
+// }
 
 /* Zoom in Keyframes */
 @-webkit-keyframes zoomin {
@@ -171,12 +160,12 @@ a:visited {
   100% {transform: scale(1);}
 }/*End of Zoom out Keyframes */
 
-.feature div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    padding-top: calc(50% - 1rem);
+.feature {
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // margin-top: 0;
+    // padding-top: calc(50% - 1rem);
     @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
     /*
     background: linear-gradient(
@@ -213,7 +202,7 @@ a:visited {
 
 /* Bio */
 #bio {
-    max-width: 1024px;
+    // max-width: 1024px;
     height: auto;
     margin: 0 auto;
 }
@@ -372,13 +361,13 @@ a:visited {
 
 /* Design */
 #section3 {
-    max-width: 1024px;
+    // max-width: 1024px;
     height: auto;
     margin: 0 auto;
 }
 
 #services {
-    max-width: 1024px;
+    // max-width: 1024px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -445,26 +434,26 @@ a:visited {
 }
 
 /* Contact */
-#bottom {
-    background-image: url('../images/aperture-vintage-lg.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#bottom > div {
-    @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
-    height: 100%;
-}
-#bottom > .contact {
-    //
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    color: $white;
-}
+// #bottom {
+//     background-image: url('../images/aperture-vintage-lg.jpg');
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+// #bottom > div {
+//     @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+//     height: 100%;
+// }
+// #bottom > .contact {
+//     //
+//     display: block;
+//     text-align: center;
+//     margin: 0 auto;
+//     padding: 3rem 1rem;
+//     text-align: center;
+//     padding-bottom: 2rem;
+//     color: $white;
+// }
 .contact {
     //
     display: block;
@@ -531,32 +520,6 @@ a:visited {
 .cta-content a i:active {
     color: $flax;
 }
-
-/* Footer */
-footer .nav-bottom {
-    list-style-type: none;
-    display: inline-block;
-    width: 100%;
-    padding: 2rem;
-    text-align: center;
-}
-footer .nav-bottom ul li {
-    display: inline-block;
-    padding: 0 10px;
-}
-footer .nav-bottom ul li {
-    a {
-        color: $white;
-    }
-    a:hover {
-        color: $red-orange;
-    }
-    a:active {
-        color: $flax;
-    }
-}
-
-
 
 /* controllers */
 .hide {
@@ -653,16 +616,6 @@ footer .nav-bottom ul li {
                 margin-bottom: 1rem;
             }
         }
-        footer .nav-bottom ul li {
-            text-align: center;
-            border-right: none;
-        }
-        footer .nav-bottom ul li a {
-            padding: 0;
-            display: block;
-            font-size: 0.8rem;
-            font-weight: 300;
-        }
     }
 
     /* Extra Small Devices, Phones */
@@ -698,12 +651,6 @@ footer .nav-bottom ul li {
             float: none;
             padding-top: 0;
         }
-        footer .nav-bottom ul li {
-            border-right: 1px solid $gainsboro;
-        }
-        footer > .nav-bottom > ul > li:nth-child(6) {
-            border-right: 0px;
-        }
     }
 
     /* Medium Devices, Desktops */
@@ -722,10 +669,10 @@ footer .nav-bottom ul li {
         }
         .nav-collapse,
         .navbar {
-            display: none;
+            // display: none;
         }
         .navbar-lg, .nav-brand {
-            display: inline-block;
+            // display: inline-block;
         }
         #services .content-block {
             display: inline-block;
@@ -734,12 +681,6 @@ footer .nav-bottom ul li {
         #services .main {
             float: left;
             padding-top: calc( (200px / 2) - 1rem );
-        }
-        footer .nav-bottom ul li {
-            border-right: 1px solid $gainsboro;
-        }
-        footer > .nav-bottom > ul > li:nth-child(6) {
-            border-right: 0px;
         }
     }
 
@@ -756,11 +697,5 @@ footer .nav-bottom ul li {
         #services .main {
             float: left;
             padding-top: calc( (200px / 2) - 1rem );
-        }
-        footer .nav-bottom ul li {
-            border-right: 1px solid $gainsboro;
-        }
-        footer > .nav-bottom > ul > li:nth-child(6) {
-            border-right: 0px;
         }
     }
