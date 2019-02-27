@@ -38,7 +38,7 @@ $(document).ready(function (){
             }, 1000);
         } else {
             $('html, body').animate({
-                scrollTop: ($(link).offset().top -44)
+                scrollTop: ($(link).offset().top -100)
             }, 1000);
         }
         closeMenu(this);

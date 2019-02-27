@@ -17,8 +17,18 @@ html {
 /* Fonts */
 /* Colors */
 /* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding-bottom: 20px; }
+
 .navbar {
-  position: sticky; }
+  position: sticky;
+  margin-bottom: 0; }
 
 .navbar-toggler {
   padding: 1rem;
@@ -75,7 +85,7 @@ nav .navbar-brand img {
   text-decoration: none;
   cursor: pointer; }
 
-header {
+header .feature {
   width: 100%;
   background-image: url("../images/aperture-vintage-lg.jpg");
   background-attachment: fixed;
@@ -92,12 +102,15 @@ footer {
 
 section {
   padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: block; }
 
 .row {
   margin-top: 20px; }
 
-.feature {
+.feature .feature-box {
   padding-top: 100px;
   padding-bottom: 100px; }
 
@@ -106,21 +119,18 @@ section {
 /* Breakpoints */
 body {
   background-color: #fff;
-  font-family: "Oswald", sans-serif;
   color: #333; }
 
 h1, h2, h3, h4, h5 {
   text-align: center; }
 
 h1 {
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
   line-height: 85px;
   font-size: 80px;
   margin: 0 0 23px 0; }
 
 h2, h3, h4, h5 {
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   line-height: 23px;
   margin: 0 0 23px 0; }
@@ -131,7 +141,6 @@ h3 {
   margin-right: 5rem; }
 
 p {
-  font-family: "Droid Serif", serif;
   line-height: 23px;
   margin: 0 0 23px 0; }
 
@@ -186,14 +195,27 @@ a:active {
 .sort-btn > button {
   margin: 5px; }
 
-/* Feature Image/box */
-.feature {
-  position: relative;
-  overflow: hidden; }
-
 /* cards */
 .card {
   padding: 10px; }
+
+.card:hover {
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+/* Title boxes */
+.title-box {
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+  max-width: 350px; }
+  .title-box h2 {
+    margin: 0;
+    color: #3C6E71; }
+  .title-box h4 {
+    margin: 0;
+    color: #3C6E71; }
 
 /* Bottom Navigation */
 #bottom-nav {
@@ -208,7 +230,7 @@ a:active {
   padding: 10px 15px;
   text-align: center; }
 
-.feature {
+.feature .feature-box {
   background: rgba(0, 0, 0, 0.5);
   /* Old browsers */
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -240,87 +262,15 @@ a:active {
 .feature > div > span a i {
   color: #F6574C; }
 
-.content {
+.section {
   padding: 3rem 1rem;
   background-color: #fff; }
 
-.content i {
+.section i {
+  font-size: 5rem; }
+
+.section .icons i {
   font-size: 2rem; }
-
-.content .icons i {
-  font-size: 2rem; }
-
-/* Bio */
-#bio {
-  height: auto;
-  margin: 0 auto; }
-
-#bio h3 {
-  max-width: 500px;
-  height: auto;
-  margin: 0 auto; }
-
-/* Gallery */
-.gallery {
-  display: block;
-  text-align: center;
-  padding: 2rem 1rem; }
-
-#gallery1 {
-  background-color: #FFFFFF; }
-
-#gallery2 {
-  background-color: #FFFFFF; }
-
-.gallery .gallery-item {
-  display: block;
-  width: 100%;
-  height: 500px;
-  border: 1px solid gainsboro;
-  background-color: #fff;
-  z-index: 1;
-  overflow: hidden; }
-
-.gallery .gallery-item:hover {
-  border: 1px solid #999;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-  z-index: 9;
-  cursor: pointer; }
-
-.gallery .gallery-item .gallery-content p {
-  text-align: center;
-  margin-bottom: 0; }
-
-.gallery .gallery-item .gallery-icons {
-  text-align: center;
-  padding-bottom: 1rem; }
-
-.gallery .gallery-item .gallery-icons i {
-  font-size: 1.25rem;
-  padding: 5px; }
-
-.gallery-img {
-  max-width: 350px;
-  height: 300px;
-  overflow: hidden; }
-
-.gallery .gallery-item div i {
-  text-decoration: none;
-  color: #3C787E;
-  text-align: right; }
-
-.gallery .gallery-item div i:hover {
-  color: #F6574C;
-  cursor: pointer; }
-
-.gallery .gallery-item div i:active {
-  color: #EDE580; }
-
-.gallery-title h2 {
-  /*border-bottom: 1px solid gainsboro;*/ }
-
-.gallery-item .design-item {
-  overflow: hidden; }
 
 /* buttons */
 .btn-gallery {
@@ -364,11 +314,20 @@ a:active {
   text-align: center;
   margin: 0 10px 0 0; }
 
-.contact .form-item {
+.contact .contact-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px; }
+
+.contact .contact-form .form-item {
   padding: 5px;
   border-radius: 5px;
+  height: 3rem; }
+
+.contact .contact-form textarea, input {
+  border-radius: 5px;
   width: 100%;
-  height: 2rem; }
+  height: 10rem; }
 
 .contact a i {
   font-size: 2rem;
@@ -387,7 +346,7 @@ a:active {
 .cta-content textarea, input {
   border-radius: 5px;
   width: 100%;
-  height: 5rem; }
+  height: 10rem; }
 
 .cta-content p {
   text-align: center;

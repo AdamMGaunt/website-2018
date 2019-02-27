@@ -7,7 +7,7 @@
     <title>Adam Gaunt</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
 
-    <link href="http://fonts.googleapis.com/css?family=Oswald:400|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+    <!-- <link href="http://fonts.googleapis.com/css?family=Oswald:400|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -84,90 +84,48 @@
   </head>
   <body>
     <nav class="navbar fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="images/favicon.png" alt="logo" class="img-responsive">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <i class="fa fa-bars"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link nav-btn" href="#top">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-btn" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-btn" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-btn" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resources
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">LinkedIn</a>
-              <a class="dropdown-item" href="#">GitHub</a>
-              <a class="dropdown-item" href="#">Stack Overflow</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-      <!-- <nav>
-          <div class="nav-collapse">
-              <div class="menu-icon">
-                  <i class="fa fa-bars"></i>
-              </div>
-          </div>
-          <div class="nav-brand">
-              <a href="#top" class="nav-btn">
-                <img src="images/favicon.png" alt="logo" class="img-responsive">
+        <a class="navbar-brand" href="#">
+          <img src="images/favicon.png" alt="logo" class="img-responsive">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link nav-btn" href="#top">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
               </a>
-          </div>
-          <div class="navbar">
-              <ul id="nav-top" class="nav-top">
-                  <li>
-                      <a href="index.html#top" class="nav-btn">home</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">about</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">portfolio</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">contact</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="navbar-lg">
-              <ul id="nav-top-lg" class="nav-top-lg">
-                  <li>
-                      <a href="index.html#top" class="nav-btn">home</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">about</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">portfolio</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-btn">contact</a>
-                  </li>
-              </ul>
-          </div>
-      </nav> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">LinkedIn</a>
+                <a class="dropdown-item" href="#">GitHub</a>
+                <a class="dropdown-item" href="#">Stack Overflow</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <header>
             <div id="top" class="feature">
-              <div>
+              <div class="feature-box">
                 <h1>Adam Gaunt</h1>
-                <h4>Frontend Web Developer</h4>
+                <div class="">
+                  <h4>Frontend Web Developer</h4>
+                </div>
               </div>
           </div>
       </header>
@@ -176,7 +134,9 @@
         <div id="about" class="section">
           <div class="row">
           <div class="col-lg-12 col-sm-12 text-center">
-            <h2>About</h2>
+            <div class="title-box">
+              <h2>About</h2>
+            </div>
             <i class="fa fa-user"></i>
             <p class="">I am a Frontend Web Developer working out of Calgary Alberta.  In addition I have a marketing and design background which I incorporate into my projects and work.  I have a passion for photography and illustration, especially with brand development, logo designs/reworks, and graphical illustrations for many business needs.  Check out my full resume on <a href="http://linkedin.ca/" target="_blank">LinkedIn</a>.</p>
             <p>Below is a list of some of the coding languages, frameworks, and development tools I have related work experience and a strong working knowledge using.</p>
@@ -209,11 +169,13 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="gallery-title text-center">
-                <h2>Projects</h2>
+                <div class="title-box">
+                  <h2>Projects</h2>
+                </div>
                 <i class="fa fa-desktop"></i>
                 <p>From concept to launch</p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <img class="card-img-top img-responsive" src="images/chrono.jpg" alt="Chrono Scheduling">
                   <div class="card-body text-center">
@@ -223,7 +185,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <img class="card-img-top img-responsive" src="images/cciwireless.jpg" alt="CCI Wireless">
                   <div class="card-body text-center">
@@ -234,7 +196,7 @@
                 </div>
               </div>
               <!-- Placeholders -->
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <img class="card-img-top img-responsive" src="https://via.placeholder.com/200" alt="CCI Wired">
                   <div class="card-body text-center">
@@ -244,13 +206,43 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <img class="card-img-top img-responsive" src="https://via.placeholder.com/200" alt="CCI Wired">
                   <div class="card-body text-center">
                     <h5 class="card-title">Frame</h5>
                     <p class="card-text">Fronted development using HTML5, CSS, JavaScript, Vue, Node and git.</p>
                     <a href="https://framefinancial.com/" target="_blank" class="btn btn-primary">framefinancial.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="https://via.placeholder.com/200" alt="CCI Wired">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Slide Puzzle</h5>
+                    <p class="card-text">Vanilla JS slide puzzle game.</p>
+                    <a href="examples/slidepuzzle/slidepuzzle.html" target="_blank" class="btn btn-primary">Slide Puzzle</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="https://via.placeholder.com/200" alt="CCI Wired">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Slide Puzzle</h5>
+                    <p class="card-text">Vanilla JS wordsearch game.</p>
+                    <a href="examples/wordsearch/wordsearch.html" target="_blank" class="btn btn-primary">Wordsearch Game</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="https://via.placeholder.com/200" alt="CCI Wired">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Jeopardy Game</h5>
+                    <p class="card-text">Vanilla JS Jeopardy game.</p>
+                    <a href="examples/jeopardy/jeopardy.html" target="_blank" class="btn btn-primary">Jeopardy Game</a>
                   </div>
                 </div>
               </div>
@@ -262,7 +254,9 @@
         <div id="contact" class="contact">
           <div class="row">
           <div class="col-sm-12">
-            <h2>Contact</h2>
+            <div class="title-box">
+              <h2>Contact</h2>
+            </div>
             <i class="fa fa-envelope"></i>
             <!--<p>Please contact via Linkedin or Github</p>
             <a href="https://www.linkedin.com/in/adam-gaunt-64010478" target="_blank">
@@ -272,18 +266,20 @@
                 <i class="fab fa-github"></i>
             </a>-->
             <p class="text-center">Fill out the form below and send me a message.</p>
-            <form name="myContactForm" method="post">
-                <p>Name</p>
-                <input type="text" id="name-input" placeholder="John Smith" class="form-item form-control" style="width:100%;" /><br/>
-                <p>Phone</p>
-                <input type="phone" id="phone-input" placeholder="5555555555" class="form-item form-control" style="width:100%;"/><br/>
-                <p>Email</p>
-                <input type="email" id="email-input" placeholder="jsmith@smith.com" class="form-item form-control" style="width:100%;"/><br/>
-                <p>Message</p>
-                <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
-                <div class="g-recaptcha" data-sitekey="6Lc4WCEUAAAAAIzW2_rwWHL_lIh1dhrBAPGHYSkD"></div>
-                <button class="btn btn-main" type="submit" onClick="submitToAPI(event)" value="submit">send</button>
-            </form>
+            <div class="contact-form">
+              <form name="myContactForm" method="post">
+                  <p>Name</p>
+                  <input type="text" id="name-input" placeholder="John Smith" class="form-item form-control" style="width:100%;" /><br/>
+                  <p>Phone</p>
+                  <input type="phone" id="phone-input" placeholder="5555555555" class="form-item form-control" style="width:100%;"/><br/>
+                  <p>Email</p>
+                  <input type="email" id="email-input" placeholder="jsmith@smith.com" class="form-item form-control" style="width:100%;"/><br/>
+                  <p>Message</p>
+                  <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
+                  <div class="g-recaptcha" data-sitekey="6Lc4WCEUAAAAAIzW2_rwWHL_lIh1dhrBAPGHYSkD"></div>
+                  <button class="btn btn-primary" type="submit" onClick="submitToAPI(event)" value="submit">send</button>
+              </form>
+            </div>
             <p>Calgary, Alberta, Canada</p>
           </div>
         </div>

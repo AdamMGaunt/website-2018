@@ -2,11 +2,16 @@
 
 header {
   //
-  width: 100%;
-  background-image: url('../images/aperture-vintage-lg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  nav {
+    //
+  }
+  .feature {
+    width: 100%;
+    background-image: url('../images/aperture-vintage-lg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 main {
@@ -25,13 +30,16 @@ section {
   //
   padding-top: 3rem;
   padding-bottom: 3rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: block;
 }
 
 .row {
   margin-top: 20px;
 }
 
-.feature {
+.feature .feature-box {
   padding-top: 100px;
   padding-bottom: 100px;
 }

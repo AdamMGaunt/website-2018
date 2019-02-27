@@ -13,7 +13,7 @@
 
 body {
     background-color: #fff;
-    font-family: $font-stack-titles;
+    // font-family: ;
     color: $primary-color;
 }
 h1, h2, h3, h4, h5 {
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-family: $font-stack-titles;
+    // font-family: $font-family-base;
     font-weight: 700;
     line-height: 85px;
     font-size: 80px;
@@ -30,7 +30,7 @@ h1 {
     margin: 0 0 23px 0;
 }
 h2, h3, h4, h5 {
-    font-family: $font-stack-titles;
+    // font-family: $font-family-base;
     font-weight: 400;
     // font-size: 20px;
     line-height: 23px;
@@ -42,7 +42,7 @@ h3 {
     margin-right: 5rem;
 }
 p {
-    font-family: $font-stack;
+    // font-family: $font-family-base;
     // font-size: 15px;
     line-height: 23px;
     margin: 0 0 23px 0;
@@ -108,16 +108,32 @@ a:visited {
     margin: 5px;
 }
 
-/* Feature Image/box */
-.feature {
-  position: relative;
-  overflow: hidden;
-}
-
 /* cards */
 
 .card {
   padding: 10px;
+}
+.card:hover {
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Title boxes */
+.title-box {
+  display: block;
+  margin: 0 auto;
+  // background-color: #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+  max-width: 350px;
+  h2 {
+    margin: 0;
+    color: $myrtle-green;
+  }
+  h4 {
+    margin: 0;
+    color: $myrtle-green;
+  }
 }
 
 /* Bottom Navigation */
@@ -134,12 +150,7 @@ a:visited {
   text-align: center;
 }
 
-.feature {
-    // position: absolute;
-    // width: 100%;
-    // height: 100%;
-    // margin-top: 0;
-    // padding-top: calc(50% - 1rem);
+.feature .feature-box {
     @include linearGradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
     color: $white;
 }
@@ -157,96 +168,17 @@ a:visited {
     color: $red-orange;
 }
 
-.content {
+// Section Defaults
+
+.section {
     padding: 3rem 1rem;
     background-color: #fff;
 }
-.content i {
+.section i {
+    font-size: 5rem;
+}
+.section .icons i {
     font-size: 2rem;
-}
-.content .icons i {
-    font-size: 2rem;
-}
-
-/* Bio */
-#bio {
-    // max-width: 1024px;
-    height: auto;
-    margin: 0 auto;
-}
-#bio h3 {
-    max-width: 500px;
-    height: auto;
-    margin: 0 auto;
-}
-
-/* Gallery */
-.gallery {
-    display: block;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-#gallery1 {
-    background-color: $white;
-}
-
-#gallery2 {
-    background-color: $white;
-}
-
-.gallery .gallery-item {
-    display: block;
-    width: 100%;
-    height: 500px;
-    border: 1px solid gainsboro;
-    background-color: #fff;
-    // margin-bottom: 5px;
-    z-index: 1;
-    overflow: hidden;
-}
-.gallery .gallery-item:hover {
-    border: 1px solid #999;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-    z-index: 9;
-    cursor: pointer;
-}
-.gallery .gallery-item .gallery-content p {
-    text-align: center;
-    margin-bottom: 0;
-}
-.gallery .gallery-item .gallery-icons {
-    text-align: center;
-    padding-bottom: 1rem;
-}
-.gallery .gallery-item .gallery-icons i {
-    font-size: 1.25rem;
-    padding: 5px;
-}
-.gallery-img {
-  max-width: 350px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.gallery .gallery-item div i {
-    text-decoration: none;
-    color: $ming;
-    text-align: right;
-}
-.gallery .gallery-item div i:hover {
-    color: $red-orange;
-    cursor: pointer;
-}
-.gallery .gallery-item div i:active {
-    color: $flax;
-}
-.gallery-title h2 {
-    /*border-bottom: 1px solid gainsboro;*/
-}
-
-.gallery-item .design-item {
-  overflow: hidden;
 }
 
 
@@ -293,11 +225,20 @@ a:visited {
     text-align: center;
     margin: 0 10px 0 0;
 }
-.contact .form-item {
+.contact .contact-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.contact .contact-form .form-item {
     padding: 5px;
     border-radius: 5px;
+    height: 3rem;
+}
+.contact .contact-form textarea, input {
+    border-radius: 5px;
     width: 100%;
-    height: 2rem;
+    height: 10rem;
 }
 .contact a i {
     font-size: 2rem;
@@ -317,7 +258,7 @@ a:visited {
 .cta-content textarea, input {
     border-radius: 5px;
     width: 100%;
-    height: 5rem;
+    height: 10rem;
 }
 .cta-content p {
     text-align: center;
