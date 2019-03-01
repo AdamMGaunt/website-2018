@@ -84,6 +84,9 @@ a:visited {
 }
 
 /* buttons */
+.btn-right {
+  text-align: right;
+}
 .btn-main {
     @include roundedCorners(5);
     background-color: $red-orange;
@@ -112,16 +115,24 @@ a:visited {
 
 .card {
   padding: 10px;
+  border: 1px solid #fff;
 }
 .card:hover {
   border: 1px solid #eee;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  // 
+}
+.card-body .card-text {
+  min-height: 75px;
 }
 
 /* Title boxes */
 .title-box {
   display: block;
   margin: 0 auto;
+  margin-bottom: 1rem;
   // background-color: #eee;
   border-bottom: 1px solid #eee;
   padding: 1.5rem;
@@ -183,27 +194,7 @@ a:visited {
 
 
 /* buttons */
-.btn-gallery {
-    @include roundedCorners(5);
-    background-color: $red-orange;
-    padding: 10px 15px;
-    @include buttonBorders(2,$red-orange);
-    outline: none;
-}
-.btn-gallery {
-    color: $white;
-}
-.btn-gallery:hover {
-    color: $ming;
-    cursor: pointer;
-}
-.btn-gallery:active {
-    color: $flax;
-}
-.btn-gallery:hover {
-    background-color: $white;
 
-}
 
 /* Contact */
 .contact {
@@ -214,7 +205,7 @@ a:visited {
     text-align: center;
 }
 .contact i {
-    font-size: 2rem;
+    font-size: 5rem;
 }
 .contact textarea, input {
     border-radius: 5px;

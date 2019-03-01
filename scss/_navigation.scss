@@ -12,6 +12,8 @@ nav {
 .navbar {
   position: sticky;
   margin-bottom: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #eee;
 }
 .navbar-toggler {
   padding: 1rem;
@@ -28,6 +30,9 @@ nav {
 nav .navbar-brand img {
     width: 4rem;
     height: auto;
+}
+.dropdown-item {
+  display: block;
 }
 //
 // nav {

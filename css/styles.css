@@ -28,7 +28,9 @@ nav {
 
 .navbar {
   position: sticky;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #eee; }
 
 .navbar-toggler {
   padding: 1rem;
@@ -45,6 +47,9 @@ nav {
 nav .navbar-brand img {
   width: 4rem;
   height: auto; }
+
+.dropdown-item {
+  display: block; }
 
 .modal {
   display: none;
@@ -172,6 +177,9 @@ a:active {
   color: #EDE580; }
 
 /* buttons */
+.btn-right {
+  text-align: right; }
+
 .btn-main {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -197,16 +205,21 @@ a:active {
 
 /* cards */
 .card {
-  padding: 10px; }
+  padding: 10px;
+  border: 1px solid #fff; }
 
 .card:hover {
   border: 1px solid #eee;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
 
+.card-body .card-text {
+  min-height: 75px; }
+
 /* Title boxes */
 .title-box {
   display: block;
   margin: 0 auto;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #eee;
   padding: 1.5rem;
   max-width: 350px; }
@@ -273,28 +286,6 @@ a:active {
   font-size: 2rem; }
 
 /* buttons */
-.btn-gallery {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #F6574C;
-  padding: 10px 15px;
-  border: 2px solid #F6574C;
-  outline: none; }
-
-.btn-gallery {
-  color: #FFFFFF; }
-
-.btn-gallery:hover {
-  color: #3C787E;
-  cursor: pointer; }
-
-.btn-gallery:active {
-  color: #EDE580; }
-
-.btn-gallery:hover {
-  background-color: #FFFFFF; }
-
 /* Contact */
 .contact {
   display: block;
@@ -303,7 +294,7 @@ a:active {
   text-align: center; }
 
 .contact i {
-  font-size: 2rem; }
+  font-size: 5rem; }
 
 .contact textarea, input {
   border-radius: 5px;
