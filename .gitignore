@@ -3,3 +3,5 @@ examples
 images
 package-lock.json
 contact.html
+.DS_Store
+css/.DS_Store
