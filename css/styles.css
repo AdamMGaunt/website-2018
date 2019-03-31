@@ -20,6 +20,16 @@ html {
   width: 2rem;
   height: auto; }
 
+/*
+$flax
+$olivine
+$ming
+$purple-taupe
+$red-orange
+*/
+.bg-navbar {
+  background-color: #353535; }
+
 .container {
   max-width: 992px;
   margin: 0 auto; }
@@ -29,6 +39,9 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.copyright {
+  font-size: 0.8rem; }
 
 /* Round Cornors */
 /* Linear Gradients*/
