@@ -18,6 +18,10 @@ $red-orange
   margin: 0 auto;
 }
 
+header {
+  margin-top: 58px;
+}
+
 .feature {
   background-image: url("../images/fishing.jpg");
   background-repeat: no-repeat;
@@ -27,4 +31,24 @@ $red-orange
 
 .copyright {
   font-size: 0.8rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.introduction {
+  margin: 20vh 0;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.85);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  margin: 0.5rem;
 }
