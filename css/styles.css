@@ -62,6 +62,10 @@ header {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.75); }
 
+.xl-icon {
+  font-size: 5rem;
+  color: #353535; }
+
 /* Round Cornors */
 /* Linear Gradients*/
 /* Breakpoints */
